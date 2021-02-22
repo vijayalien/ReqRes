@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apitest.RestAssured.Restapitest">
+      <class name="apitest.RestAssured.Reqres">
         <methods>
-          <include name="setUp"/>
-          <include name="delete"/>
+          <include name="loginUnsuccessful"/>
+          <include name="propload"/>
         </methods>
-      </class> <!-- apitest.RestAssured.Restapitest -->
+      </class> <!-- apitest.RestAssured.Reqres -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

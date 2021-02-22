@@ -6,6 +6,7 @@
       <class name="apitest.RestAssured.Restapitest"/>
       <class name="apitest.RestAssured.EmployeeAPI"/>
       <class name="apitest.RestAssured.RestUtils"/>
+      <class name="apitest.RestAssured.Reqres"/>
     </classes>
   </test> <!-- RestassuredTest -->
 </suite> <!-- Suite -->

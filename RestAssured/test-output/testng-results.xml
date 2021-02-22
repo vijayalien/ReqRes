@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5163" started-at="2021-02-20T12:14:38 IST" finished-at="2021-02-20T12:14:43 IST">
+  <suite name="Default suite" duration-ms="7564" started-at="2021-02-22T12:27:15 IST" finished-at="2021-02-22T12:27:23 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5163" started-at="2021-02-20T12:14:38 IST" finished-at="2021-02-20T12:14:43 IST">
-      <class name="apitest.RestAssured.Restapitest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:apitest.RestAssured.Restapitest@1e965684]" name="setUp" is-config="true" duration-ms="805" started-at="2021-02-20T12:14:38 IST" finished-at="2021-02-20T12:14:39 IST">
+    <test name="Default test" duration-ms="7564" started-at="2021-02-22T12:27:15 IST" finished-at="2021-02-22T12:27:23 IST">
+      <class name="apitest.RestAssured.Reqres">
+        <test-method status="PASS" signature="propload()[pri:0, instance:apitest.RestAssured.Reqres@184f6be2]" name="propload" is-config="true" duration-ms="8" started-at="2021-02-22T12:27:15 IST" finished-at="2021-02-22T12:27:15 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:apitest.RestAssured.Restapitest@1e965684]" name="setUp" is-config="true" duration-ms="0" started-at="2021-02-20T12:14:39 IST" finished-at="2021-02-20T12:14:39 IST">
+        </test-method> <!-- propload -->
+        <test-method status="PASS" signature="delayedResponse()[pri:0, instance:apitest.RestAssured.Reqres@184f6be2]" name="delayedResponse" duration-ms="6318" started-at="2021-02-22T12:27:15 IST" finished-at="2021-02-22T12:27:21 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="delete()[pri:0, instance:apitest.RestAssured.Restapitest@1e965684]" name="delete" duration-ms="4299" started-at="2021-02-20T12:14:39 IST" finished-at="2021-02-20T12:14:43 IST">
+        </test-method> <!-- delayedResponse -->
+        <test-method status="PASS" signature="loginUnsuccessful()[pri:0, instance:apitest.RestAssured.Reqres@184f6be2]" name="loginUnsuccessful" duration-ms="1209" started-at="2021-02-22T12:27:21 IST" finished-at="2021-02-22T12:27:23 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- delete -->
-      </class> <!-- apitest.RestAssured.Restapitest -->
+        </test-method> <!-- loginUnsuccessful -->
+      </class> <!-- apitest.RestAssured.Reqres -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
