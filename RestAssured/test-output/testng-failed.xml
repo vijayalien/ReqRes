@@ -5,8 +5,9 @@
     <classes>
       <class name="apitest.RestAssured.Reqres">
         <methods>
-          <include name="loginUnsuccessful"/>
+          <include name="regUnsuccessful"/>
           <include name="propload"/>
+          <include name="regSuccessfull"/>
         </methods>
       </class> <!-- apitest.RestAssured.Reqres -->
     </classes>
