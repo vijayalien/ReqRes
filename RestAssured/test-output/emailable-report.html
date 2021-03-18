@@ -9,9 +9,9 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">14,952</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">13,074</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">apitest.RestAssured.Reqres</td><td><a href="#m0">regSuccessfull</a></td><td rowspan="1">1614360562139</td><td rowspan="1">2923</td></tr><tr class="failedeven"><td><a href="#m1">regUnsuccessful</a></td><td rowspan="1">1614360565077</td><td rowspan="1">916</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">apitest.RestAssured.Reqres</td><td><a href="#m2">delayedResponse</a></td><td rowspan="1">1614360551095</td><td rowspan="1">8095</td></tr><tr class="passedeven"><td><a href="#m3">loginSuccessful</a></td><td rowspan="1">1614360559198</td><td rowspan="1">2013</td></tr><tr class="passedeven"><td><a href="#m4">loginUnsuccessful</a></td><td rowspan="1">1614360561212</td><td rowspan="1">922</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">apitest.RestAssured.Reqres</td><td><a href="#m0">regSuccessfull</a></td><td rowspan="1">1616048460353</td><td rowspan="1">1025</td></tr><tr class="failedeven"><td><a href="#m1">regUnsuccessful</a></td><td rowspan="1">1616048461386</td><td rowspan="1">1010</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">apitest.RestAssured.Reqres</td><td><a href="#m2">delayedResponse</a></td><td rowspan="1">1616048449415</td><td rowspan="1">8587</td></tr><tr class="passedeven"><td><a href="#m3">loginSuccessful</a></td><td rowspan="1">1616048458008</td><td rowspan="1">1373</td></tr><tr class="passedeven"><td><a href="#m4">loginUnsuccessful</a></td><td rowspan="1">1616048459386</td><td rowspan="1">963</td></tr></tbody>
 </table>
 <h2>Default test</h2><h3 id="m0">apitest.RestAssured.Reqres#regSuccessfull</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;400&gt;.
@@ -52,7 +52,7 @@ Expected status code &lt;200&gt; but was &lt;400&gt;.
 	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at apitest.RestAssured.Reqres.regSuccessfull(Reqres.java:144)
+	at apitest.RestAssured.Reqres.regSuccessfull(Reqres.java:140)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -121,7 +121,7 @@ Expected: Missing password
 	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
 	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
-	at apitest.RestAssured.Reqres.regUnsuccessful(Reqres.java:125)
+	at apitest.RestAssured.Reqres.regUnsuccessful(Reqres.java:122)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

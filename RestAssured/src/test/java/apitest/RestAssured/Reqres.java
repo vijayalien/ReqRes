@@ -1,5 +1,6 @@
 package apitest.RestAssured;
 
+import org.hamcrest.core.IsEqual;
 import org.hamcrest.core.IsNot;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -45,12 +46,12 @@ public class Reqres {
 	@Test
 	public void delayedResponse() {
 		
-		given()
+		Resource.basegiven()
 			.queryParam("delay", prop.getProperty("delay"))
-			.contentType(ContentType.JSON)
+			
 		
 		.when()
-			.get("https://reqres.in/api/users")
+			.get("/users")
 			
 		.then()
 			.statusCode(200)
@@ -67,18 +68,18 @@ public class Reqres {
 		tst.put("email","peter@klaven");
 		
 		
-		given()
+		Resource.basegiven()
 			
 		.when()
 			.body("{"+
 			       "\"email\": \"peter@klaven\""+
 					"}")
 			
-			.post("https://reqres.in/api/login")
+			.post("/login")
 		.then()
 			.statusCode(400)
 			.assertThat().statusLine("HTTP/1.1 400 Bad Request")
-			.assertThat().body("error",equalTo("Missing email or username"));
+			.assertThat().body("error",equalTo("Missing password"));
 			
 	}
 	
@@ -92,12 +93,10 @@ public class Reqres {
 		System.out.println(prop.getProperty("email2"));
 		System.out.println(prop.getProperty("password"));
 				
-		Response res=given()
-			.accept(ContentType.JSON)
-			.contentType("application/json")
-			.body(map)
+		Response res=Resource.basegiven()
+				.body(map)
 		.when()
-			.post("https://reqres.in/api/login")
+			.post("/login")
 		.then()
 			.statusCode(200)
 			.extract().response();
@@ -114,12 +113,11 @@ public class Reqres {
 		
 		map.put("email", prop.getProperty("regemail"));
 		
-		given()
-			.contentType(ContentType.JSON)
-			.accept("application/json")
+		Resource.basegiven()
+			
 		.when()
 			.body(map)
-			.post("https://reqres.in/api/register")
+			.post("/register")
 		.then()
 			.statusCode(400)
 			.assertThat().body("error", equalTo("Missing password"));
@@ -134,12 +132,11 @@ public class Reqres {
 		map.put("email",prop.getProperty("regemail"));
 		map.put("password",prop.getProperty("regpassword"));
 		
-		given()
-			.contentType(ContentType.JSON)
-			.accept("application/json")
+		Resource.basegiven()
+			
 		.when()
 			.body(map)
-			.post("https://reqres.in/api/register")
+			.post("/register")
 		.then()
 			.statusCode(200)
 			.assertThat().body("id",notNullValue());
